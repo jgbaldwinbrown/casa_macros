@@ -4,8 +4,6 @@ function casait(inpath, outprefix) {
 	open(outprefix + "_reformatted.tif");
 	run("8-bit");
 
-	setAutoThreshold("Default");
-	run("Threshold...");
 	setThreshold(159, 255);
 	setOption("BlackBackground", false);
 	run("Convert to Mask", "method=Default background=Light");

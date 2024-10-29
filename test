@@ -1,4 +1,4 @@
 #!/bin/sh
 set -e
 
-imagej -b cvam.ijm "./testdir/jim26_hmc20_20xzoom_1xspeed_cover.avi:./testdir/out"
+imagej -b cvam.ijm "./testdir/jim26_hmc20_20xzoom_1xspeed_cover.avi:./testdir/out" > testout.txt
