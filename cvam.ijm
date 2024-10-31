@@ -8,7 +8,7 @@ function casait(inpath, outprefix) {
 	setOption("BlackBackground", false);
 	run("Convert to Mask", "method=Default background=Light");
 
-	run("CASA2 ", "a,=10 b,=600 c,=1 d,=30 e,=0.11 f,=0.11 g,=0.11 h,=200 h,_0=0.11 i,=100 j,=100 k,=0.11 l,=0.11 m,=100 n,=100 o,=100 p,=100 q,=26 r,=189.5 s,=0 t,=0 u,=1 v,=1");
+	run("CASA2_1 ", "a,=10 b,=600 c,=1 d,=30 e,=0.11 f,=0.11 g,=0.11 h,=200 i,=0.33 j,_0=0.11 k,=100 l,=100 m,=0.11 n,=0.11 o,=100 p,=100 q,=100 r,=100 s,=26 t,=189.5 u,=0 v,=0 w,=1 x,=1");
 	saveAs("Results", outprefix + "_results.txt");
 }
 
